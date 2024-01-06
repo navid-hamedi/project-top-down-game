@@ -1,0 +1,27 @@
+:root {
+    --pixel-size: 2px;
+    --grid-cell: calc( var(--pixel-size) * 16);
+}
+@media( min-width: 700px ) {
+    :root {
+        --pixel-size: 3px;
+    }
+}
+@media( min-width: 900px ) {
+    :root {
+        --pixel-size: 4px;
+    }
+}
+
+
+.pixel-art {
+    image-rendering: pixelated;
+}
+
+.camera {
+    width: calc(var(--pixel-size) * 160);
+    height: calc(var(--pixel-size) * 144);
+    overflow: hidden;
+    background: #61ddf7;
+    position: relative;
+}
