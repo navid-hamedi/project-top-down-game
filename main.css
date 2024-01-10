@@ -25,3 +25,29 @@
     background: #61ddf7;
     position: relative;
 }
+
+.map {
+    image-rendering: pixelated;
+    background-image: url("https://assets.codepen.io/21542/CameraDemoMap.png");
+    background-size: 100%;
+    width: calc(13 * var(--grid-cell));
+    height: calc(10 * var(--grid-cell));
+    position: relative;
+}
+
+.character {
+    width: calc( var(--grid-cell) * 2 );
+    height: calc( var(--grid-cell) * 2 );
+    position: absolute;
+    overflow: hidden;
+}
+
+.shadow {
+    width: calc( var(--grid-cell) * 2 );
+    height: calc( var(--grid-cell) * 2 );
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url("https://assets.codepen.io/21542/DemoRpgCharacterShadow.png") no-repeat no-repeat;
+    background-size: 100%;
+}
