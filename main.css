@@ -112,7 +112,7 @@
     right: calc(var(--pixel-size) * 2);
     bottom: calc(var(--pixel-size) * 2);
     width: calc(var(--pixel-size) * 37);
-    height: calc(var(--pixel-size) * 38);
+    height: calc(var(--pixel-size) * 25);
  }
  .dpad-button {
     appearance:none;
@@ -137,7 +137,7 @@
  }
  .dpad-down {
     position: absolute;
-    bottom:var(--pixel-size);
+    top: calc(var(--pixel-size) * 12);
     left: calc(var(--pixel-size) * 12);
  }
  .dpad-left {
