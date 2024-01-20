@@ -1,7 +1,7 @@
 :root {
     --pixel-size: 2px;
     --grid-cell: calc( var(--pixel-size) * 16);
-    --bg: #9fa7e4;
+    --bg: #151515;
  }
  @media( min-width: 700px ) {
     :root {
@@ -53,7 +53,7 @@
  
  .map {
     image-rendering: pixelated;
-    background-image: url("https://assets.codepen.io/21542/CameraDemoMap.png");
+    background-image: url("./assets/DemoMap.webp");
     background-size: 100%;
     width: calc(13 * var(--grid-cell));
     height: calc(10 * var(--grid-cell));
@@ -107,14 +107,14 @@
    }
  }
  
- .dpad {
+ .wasd {
     position:absolute;
-    right: calc(var(--pixel-size) * 2);
+    left: calc(var(--pixel-size) * 2);
     bottom: calc(var(--pixel-size) * 2);
     width: calc(var(--pixel-size) * 37);
     height: calc(var(--pixel-size) * 25);
  }
- .dpad-button {
+ .wasd-button {
     appearance:none;
     outline:0;
     border:0;
@@ -122,36 +122,36 @@
     padding:0;
     cursor:pointer;
  }
- .dpad-button svg {
+ .wasd-button svg {
     display:block;
     height: calc(var(--pixel-size) * 13);
  }
  
- .dpad-button.pressed .Arrow_arrow-inset { stroke:#07c2cc; }
- .dpad-button.pressed .Arrow_arrow-body { stroke:#17dfea; }
+ .wasd-button.pressed .Arrow_arrow-inset { stroke:#cc0707; }
+ .wasd-button.pressed .Arrow_arrow-body { stroke:#ea1717; }
  
- .dpad-up {
+ .wasd-up {
     position: absolute;
     left: calc(var(--pixel-size) * 12);
     top:0;
  }
- .dpad-down {
+ .wasd-down {
     position: absolute;
     top: calc(var(--pixel-size) * 12);
     left: calc(var(--pixel-size) * 12);
  }
- .dpad-left {
+ .wasd-left {
     position: absolute;
     top: calc(var(--pixel-size) * 12);
     left:0;
  }
- .dpad-right {
+ .wasd-right {
     position: absolute;
     top: calc(var(--pixel-size) * 12);
     right:0;
  }
  
- .dpad {
+ .wasd {
     user-select:none;
  }
  
@@ -182,11 +182,4 @@
  .corner_bottomright {
     bottom: calc(var(--pixel-size) * -1);
     right: calc(var(--pixel-size) * -1);
- }
- 
- .headline {
-    position:absolute;
-    top:calc(var(--pixel-size) * 2);
-    right:calc(var(--pixel-size) * 2);
-    width: calc(var(--pixel-size) * 75)
  }
